@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Linear Gradient Generator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="gradient">
+	
+	<h1>Linear Gradient Generator !</h1>
+
+	<input class="color1" type="color" value="#00ff00">
+	<input class="color2" type="color" value="#ff0000">
+	<h2>Current CSS Background</h2>
+	
+	<h2 id="output" onclick="copyToClipboard()"></h2>
+	<input type="text" readonly id="copyOutput">
+
+	<script type="text/javascript">
+        document.addEventListener("contextmenu", function(e){
+            e.preventDefault();
+        }, false);
+    </script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
